@@ -4,8 +4,22 @@ const redirect = require('../service/redirect')
 const eleme = require('../service/eleme')
 const meituan = require('../service/meituan')
 const logger = require('../service/logger')
+const mysql = require('mysql');
+
+//创建数据库连接配置
+const pool = mysql.createPool({
+    host:'47.52.74.236',
+    user:'root',
+    password:'lin2598056',
+    database:'hongbao',
+    insecureAuth: true
+  });
 
 router.post('/', async (req, res, next) => {
+  let phone = req.body.mobile
+  pool.query(`INSERT INTO info_table(id,phone) VALUES("0",${phone})`,[0,],function(e){
+    console.log(e)
+  })
   try {
     let {url, mobile} = req.body
     if (!url || !mobile) {

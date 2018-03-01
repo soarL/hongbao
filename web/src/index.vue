@@ -20,7 +20,7 @@
           {{submit ? '正在领取...' : '马上领取'}}
         </button>
       </div>
-      <ul class="breadcrumb">
+<!--       <ul class="breadcrumb">
         <li>
           <a href="https://github.com/game-helper/hongbao" target="_blank">本站开源</a>
         </li>
@@ -30,7 +30,7 @@
         <li>
           <a href="https://github.com/game-helper/donate" target="_blank">捐赠支持我们更好的服务</a>
         </li>
-      </ul>
+      </ul> -->
       <div>
         <pre><b>如何获取拼手气红包？</b><br>好友下单后，分享到群里的红包<br>饿了么、美团 APP 买过的订单点进去，分享红包</pre>
         <pre><b>如何复制红包链接？</b><br>分享到 QQ，选择 “我的电脑”，PC 版 QQ 复制链接<br>分享到微信，PC 版微信右键用浏览器打开，复制链接<br>长按微信分享的卡片，点击更多，发送邮件，复制链接</pre>
@@ -71,7 +71,7 @@
         const {url, mobile} = this
         this.submit = true
         try {
-          const {data: {message}} = await axios.post(`${process.env.API_URL}/hongbao`, {url, mobile})
+          const {data: {message}} = await axios.post(`/hongbao`, {url, mobile})
           alert(message)
         } catch (e) {
           console.error(e)
