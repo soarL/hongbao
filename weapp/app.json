@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "page/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#d9534f",
+    "navigationBarTitleText": "一键领取手气最佳红包",
+    "navigationBarTextStyle": "#333"
+  }
+}

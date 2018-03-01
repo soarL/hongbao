@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build"
+  },
+  "devDependencies": {
+    "less": "^3.0.1",
+    "less-loader": "^4.0.5",
+    "poi": "^9.6.13"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7"
+  }
+}

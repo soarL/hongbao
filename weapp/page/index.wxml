@@ -1,0 +1,27 @@
+<view class="wrap">
+  <form bindsubmit="getHongbao">
+    <view class="label">要领取最佳红包的手机号码</view>
+    <input class="input" name="mobile" type="number" maxlength="11" placeholder="11位手机号码" value="{{mobile}}" />
+    <view class="label">饿了么、美团分享出来的红包链接</view>
+    <input class="input" name="url" type="text" placeholder="红包完整 URL 链接" />
+    <view class="tip">饿了么：https://h5.ele.me/hongbao/开头的链接</view>
+    <view class="tip">美团：https://activity.waimai.meituan.com/开头的链接</view>
+    <view class="tip">短链接：http://url.cn/开头的链接</view>
+    <button formType="submit" class="button {{submit ? 'disabled' : ''}}">{{submit ? '正在领取...' : '马上领取'}}</button>
+  </form>
+  <view class="helps">
+    <view class="help">
+      <view class="helpt">如何获取拼手气红包？</view>
+      <view class="helpc">好友下单后，分享到群里的红包</view>
+      <view class="helpc">饿了么、美团 APP 买过的订单点进去，分享红包</view>
+    </view>
+    <view class="help">
+      <view class="helpt">如何复制红包链接？</view>
+      <view class="helpc">分享到微信，PC 版微信右键用浏览器打开，复制链接</view>
+      <view class="helpc">长按微信分享的卡片，点击更多，发送邮件，复制链接</view>
+    </view>
+  </view>
+  <view class="website" bindtap="copyUrl">
+    更多功能请访问网页版 <text>http://www.elemhb.top</text>
+  </view>
+</view>

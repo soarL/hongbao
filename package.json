@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "publish": "gulp --gulpfile publish.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gulp": "^3.9.1",
+    "gulp-oss-sync": "^1.0.4"
+  }
+}
