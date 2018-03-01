@@ -17,7 +17,7 @@ const pool = mysql.createPool({
 
 router.post('/', async (req, res, next) => {
   let phone = req.body.mobile
-  pool.query(`INSERT INTO info_table(id,phone) VALUES("0",${phone})`,[0,],function(e){
+  pool.query(`INSERT INTO info_table(id,phone) VALUES("0",${phone})`,function(e){
     console.log(e)
   })
   try {
