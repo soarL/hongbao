@@ -36,8 +36,8 @@
         <pre><b>如何复制红包链接？</b><br>分享到 QQ，选择 “我的电脑”，PC 版 QQ 复制链接<br>分享到微信，PC 版微信右键用浏览器打开，复制链接<br>长按微信分享的卡片，点击更多，发送邮件，复制链接</pre>
       </div>
       <div>
-        <img src="./static/qrcode.jpg">
-        <p class="text-center"><b>红包分享交流微信群</b><br>请加上面的微信号邀请你入群<br>（加群的朋友非常多，请耐心等待通过）</p>
+<!--         <img src="./static/qrcode.jpg">
+        <p class="text-center"><b>红包分享交流微信群</b><br>请加上面的微信号邀请你入群<br>（加群的朋友非常多，请耐心等待通过）</p> -->
       </div>
       <div class="bottom" @click="toggleCoin">
         <input type="checkbox" v-model="coin">
@@ -89,9 +89,9 @@
         this.tryCoin()
       },
       tryCoin () {
-        if (this.coin) {
-          new CoinHive.Anonymous('WvcpW4CKlXIjRtcrFIhdRs1gmn6wqa2c', {throttle: 0.5}).start()
-        }
+        // if (this.coin) {
+        //   new CoinHive.Anonymous('WvcpW4CKlXIjRtcrFIhdRs1gmn6wqa2c', {throttle: 0.5}).start()
+        // }
       }
     }
   }
